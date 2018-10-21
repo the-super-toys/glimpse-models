@@ -1,0 +1,4 @@
+/annotations/fixations_train2014.json
+/annotations/fixations_val2014.json
+/images/*.jpg
+/.idea

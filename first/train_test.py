@@ -12,11 +12,11 @@ from first.gaussian_kernel import gausian_kernel
 image_list = []
 heatmap_list = []
 
-samples = 50
-batch_size = 5
+samples = 1
+batch_size = 1
 epochs = 200
 
-for filename in glob.glob('../heatmaps/*.jpg')[:samples]:
+for filename in glob.glob('../heatmaps/*.jpg')[3:3 + samples]:
     image_list.append(filename.replace("heatmaps", "images"))
     heatmap_list.append(filename)
 
@@ -72,19 +72,18 @@ model = Sequential()
 
 model.add(MaxPooling2D((4, 4), input_shape=(480, 640, 3)))
 
-model.add(Convolution2D(8, (3, 3), activation="relu", padding='same'))
 model.add(Convolution2D(16, (3, 3), activation="relu", padding='same'))
 
-model.add(Convolution2D(8, (3, 3), activation="relu", padding='same'))
-model.add(Convolution2D(32, (3, 3), activation="relu", padding='same'))
+# model.add(Convolution2D(8, (3, 3), activation="relu", padding='same'))
+# model.add(Convolution2D(32, (3, 3), activation="relu", padding='same'))
 
-model.add(Convolution2D(32, (1, 1), activation="relu", padding='same', input_shape=(480, 640, 3)))
-model.add(Convolution2D(32, (1, 1), activation="relu", padding='same', input_shape=(480, 640, 3)))
+# model.add(Convolution2D(32, (1, 1), activation="relu", padding='same', input_shape=(480, 640, 3)))
+# model.add(Convolution2D(32, (1, 1), activation="relu", padding='same', input_shape=(480, 640, 3)))
 
 model.add(Convolution2D(1, (3, 3), activation="relu", padding='same', input_shape=(480, 640, 3)))
 
-kernel = gausian_kernel(6)
-model.add(Convolution2D(1, (21, 21), kernel_initializer=kernel, padding='same', trainable=False))
+kernel = gausian_kernel(5)
+model.add(Convolution2D(1, (16, 16), kernel_initializer=kernel, padding='same', trainable=False))
 
 model.add(UpSampling2D((4, 4)))
 model.summary()

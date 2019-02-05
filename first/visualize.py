@@ -16,9 +16,9 @@ salicon = SALICON("../annotations/fixations_train2014examples.json")
 
 print("getting image IDs")
 imgIds = salicon.getImgIds()
-img = salicon.loadImgs(imgIds[0])[0]
+img = salicon.loadImgs(imgIds[3])[0]
 
-print("plotting image "+img['file_name'])
+print("plotting image " + img['file_name'])
 image = io.imread('../images/' + img['file_name'])
 plt.figure()
 plt.imshow(image)
@@ -35,5 +35,8 @@ heatmap = softmax(salicon.buildFixMap(anns))
 plt.figure()
 plt.imshow(heatmap, cmap="Greys_r")
 plt.show()
+
+print(image.shape)
+print(heatmap.shape)
 
 print(heatmap.max(), heatmap.min())

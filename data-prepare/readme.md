@@ -1,4 +1,5 @@
-# Data prepare
+
+# Data prepare
 
 The purpose of this is to generate the heatmap images from the original images and the saliency annotations that you can download in http://salicon.net/download/
 

@@ -7,6 +7,8 @@ If you just want to get a quick glance at the model architecture just go to [inf
 and check it out, also there you can see the model output and a small benchmark on it's latency on my computer 
 (9ms if you're wondering).
 
+![architecture](doc_res/architecture.png)
+
 We currenty only have a PyTorch based architecture, but we're planing on adding a Keras version.
 
 ## Don't be shy

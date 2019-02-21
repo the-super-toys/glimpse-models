@@ -16,3 +16,7 @@ We currenty only have a PyTorch based architecture, but we're planing on adding 
 We'd love to hear your proposals for improving the architecture, increasing the dataset 
 (maybe we could train domain specific models for faces, or food, or animals) or whatever, 
 so feel free to create an issue with your improvement ideas, or fork this repository and send us a Pull Request!! 
+
+## Client-side implementations
+
+[Android](https://github.com/the-super-toys/glimpse-android-client)

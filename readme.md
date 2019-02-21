@@ -1,6 +1,6 @@
 # Glimpse
 
-A content-aware cropping library for Android (backstage)
+A content-aware cropping library (backstage)
 
 We would not be 100% open source if we didn't also share our Deep Learning model with you, so... here it is!  
 If you just want to get a quick glance at the model architecture just go to [inference.ipynb](pytorch/inference.ipynb) 

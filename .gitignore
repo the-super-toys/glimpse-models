@@ -1,3 +1,4 @@
 /dataset/heatmaps/*
 /dataset/images/*
 /models/
+.idea/

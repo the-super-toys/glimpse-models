@@ -1,4 +1,6 @@
 /dataset/heatmaps/*
 /dataset/images/*
 /models/
+/data-prepare/annotations/*
 .idea/
+/data-prepare/PythonAPI/salicon/__pycache__/*

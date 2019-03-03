@@ -19,7 +19,7 @@ and check it out, also there you can see the model output and a small benchmark 
 
 ![architecture](doc_res/architecture.png)
 
-We currenty only have a PyTorch based architecture, but we're planing on adding a Keras version.
+Both PyTorch and Keras implementations are available. You can check either [PyTorch notebook](pytorch/inference.ipynb)  or [Keras one](keras/inference.ipynb) depending on your taste :)
 
 In order to build Glimpse model we took inspiration from several papers:
 * [Faster gaze prediction with dense networks and Fisher pruning](https://arxiv.org/abs/1801.05787)

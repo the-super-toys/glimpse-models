@@ -13,5 +13,4 @@ a 30ms latency on a computer has at least 90ms latency on a mobile device.
 The best achieved latency on a computer is 9ms but in the device it goes to up to 70ms :(
 
 [torch2tf.ipynb](https://github.com/the-super-toys/glimpse-models/blob/master/pytorch/torch2tf.ipynb): In this last notebook, we convert the PyTorch model to a tensorflow lite
-model that can be used in an Android device. This is probably not the best practice, and we plan on adding a Keras implementation
-of the model that can easily be transformed to tf-lite without adding too much extra complexity.
+model that can be used in an Android device.

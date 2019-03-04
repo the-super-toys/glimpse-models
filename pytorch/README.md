@@ -10,7 +10,7 @@ images and evaluate the latency on your computer's CPU. Latency on a computer is
 Based on our experience, on mobile devices the latency is at least x3 slower than on a laptop, meanin that a model with
 a 30ms latency on a computer has at least 90ms latency on a mobile device.
 
-The best achieved latency on a computer is 9ms but in the device it goes to up to 70ms :(
+The best achieved latency on a computer is 9ms but in the device it goes to up to 30ms :(
 
 [torch2tf.ipynb](https://github.com/the-super-toys/glimpse-models/blob/master/pytorch/torch2tf.ipynb): In this last notebook, we convert the PyTorch model to a tensorflow lite
 model that can be used in an Android device.
